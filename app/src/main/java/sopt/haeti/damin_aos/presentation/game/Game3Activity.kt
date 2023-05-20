@@ -5,6 +5,7 @@ import androidx.activity.viewModels
 import sopt.haeti.damin_aos.R
 import sopt.haeti.damin_aos.databinding.ActivityGame3Binding
 import sopt.haeti.damin_aos.presentation.home.HomeActivity
+import sopt.haeti.damin_aos.presentation.result.ResultActivity
 import sopt.haeti.damin_aos.util.base.BindingActivity
 import sopt.haeti.damin_aos.util.extension.startActivity
 
@@ -32,7 +33,7 @@ class Game3Activity : BindingActivity<ActivityGame3Binding>(R.layout.activity_ga
     }
 
     private fun navigateToResult() {
-        startActivity<Game2Activity>()
+        startActivity<ResultActivity>()
         if (!isFinishing) finish()
     }
 
