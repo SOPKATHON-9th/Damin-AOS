@@ -10,7 +10,8 @@ class SituationInViewHolder(
 
     fun bind(data: SituationInModel) {
         with(binding) {
-            situationInModel = data
+            tvSelect.text = data.title
+            ivSelect.setImageResource(data.img)
             root.setOnClickListener {
                 itemClick(data.title)
             }

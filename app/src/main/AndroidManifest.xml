@@ -39,6 +39,7 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <activity
@@ -46,13 +47,22 @@
             android:screenOrientation="portrait"></activity>
 
         <activity
+            android:name=".presentation.game.Game1Activity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
             android:name=".presentation.situation.SituationInActivity"
             android:screenOrientation="portrait"></activity>
 
-        <activity
-            android:name=".presentation.situation.SituationWhereActivity"
-            android:screenOrientation="portrait"></activity>
 
+        <activity
+            android:name=".presentation.game.Game2Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.game.Game3Activity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
