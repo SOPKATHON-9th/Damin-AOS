@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="@id/iv_cueing_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_cueing_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_cueing_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="@id/iv_cueing_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="20dp"
+            android:progress="20"
+            android:progressDrawable="@drawable/progressbar_success_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_cueing_logo" />
+
+        <TextView
+            android:id="@+id/tv_survive_rate"
+            style="@style/Body3_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            android:text="생존률 15%"
+            android:textColor="#00F244"
+            app:layout_constraintStart_toStartOf="@id/progressBar"
+            app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+        <TextView
+            android:id="@+id/tv_qustion"
+            style="@style/H3Headline"
+            android:layout_width="300dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_survive_question"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="건물 내부로 들어왔다. \n당신의 선택은?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_survive_rate" />
+
+        <ImageView
+            android:id="@+id/iv_question"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_qustion" />
+
+        <TextView
+            android:id="@+id/tv_survive_question_1"
+            style="@style/Body2_bold"
+            android:layout_width="301dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/bg_survive_question"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_question" />
+
+
+        <TextView
+            android:id="@+id/tv_survive_question_2"
+            style="@style/Body2_bold"
+            android:layout_width="301dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_survive_question"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_survive_question_1" />
+
+        <TextView
+            android:id="@+id/tv_survive_question_3"
+            style="@style/Body2_bold"
+            android:layout_width="301dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_survive_question"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_survive_question_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

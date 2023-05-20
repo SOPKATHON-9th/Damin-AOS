@@ -48,7 +48,7 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
-    
+
 
     <style name="Body3_bold">
         <item name="fontFamily">@font/pretendard_semibold</item>
