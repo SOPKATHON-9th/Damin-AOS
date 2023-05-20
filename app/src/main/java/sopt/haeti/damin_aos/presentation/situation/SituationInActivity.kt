@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import sopt.haeti.damin_aos.R
 import sopt.haeti.damin_aos.databinding.ActivityHomeBinding
+import sopt.haeti.damin_aos.presentation.home.HomeActivity
 import sopt.haeti.damin_aos.presentation.home.HomeModel
 import sopt.haeti.damin_aos.presentation.mypage.MypageActivity
 import sopt.haeti.damin_aos.util.base.BindingActivity
@@ -29,6 +30,12 @@ class SituationInActivity :
             intent = Intent(this@SituationInActivity, MypageActivity::class.java)
             finish()
             startActivity(intent)
+        }
+
+        binding.ivBack.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            })
         }
     }
 }

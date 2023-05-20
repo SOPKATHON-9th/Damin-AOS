@@ -2,6 +2,7 @@ package sopt.haeti.damin_aos.presentation.home
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import sopt.haeti.damin_aos.R
 import sopt.haeti.damin_aos.databinding.ActivityHomeBinding
 import sopt.haeti.damin_aos.presentation.mypage.MypageActivity
@@ -30,6 +31,8 @@ class HomeActivity : BindingActivity<ActivityHomeBinding>(R.layout.activity_home
             finish()
             startActivity(intent)
         }
+
+        binding.ivBack.visibility = View.GONE
 
     }
 
