@@ -54,7 +54,7 @@
             android:indeterminate="false"
             android:max="100"
             android:minHeight="20dp"
-            android:progress="20"
+            android:progress="1"
             android:progressDrawable="@drawable/progressbar_success_rate"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/black"
-            android:text="생존률 15%"
+            android:text="생존률 1%"
             android:textColor="#00F244"
             app:layout_constraintStart_toStartOf="@id/progressBar"
             app:layout_constraintTop_toBottomOf="@id/progressBar" />
