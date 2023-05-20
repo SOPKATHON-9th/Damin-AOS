@@ -11,7 +11,7 @@ data class ResponseSituationResult(
     val message: String,
     @SerialName("data")
     val data: SituationResult,
-){
+) {
     @Serializable
     data class SituationResult(
         @SerialName("result")

@@ -1,6 +1,8 @@
 package sopt.haeti.damin_aos.presentation.home
 
+import androidx.annotation.DrawableRes
+
 data class HomeModel(
-    val img: String,
+    @DrawableRes val img: Int,
     val title: String,
 )

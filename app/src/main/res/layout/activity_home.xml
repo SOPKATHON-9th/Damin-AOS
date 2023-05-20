@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -11,36 +12,65 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/iv_logo"
+            android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="@id/iv_cueing_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_cueing_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_cueing_logo"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/btn_mypage"
+        <ImageView
+            android:id="@+id/iv_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="@id/iv_cueing_logo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo" />
+
 
         <TextView
             android:id="@+id/tv_title"
+            style="@style/H3Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/bg_situation_title"
+            android:backgroundTint="@color/main_color"
+            android:gravity="center"
+            android:padding="33dp"
+            android:text="@string/situation_in_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+            app:layout_constraintTop_toBottomOf="@id/iv_cueing_logo" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home"
             android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            tools:listitem="@layout/item_situation_in"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title"
-            app:spanCount="2"></androidx.recyclerview.widget.RecyclerView>
-
+            app:spanCount="2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -11,4 +11,6 @@ interface ResultService {
     fun getSituationResult(
         @Body request: RequestSituationResult
     ): Call<ResponseSituationResult>
+
+
 }

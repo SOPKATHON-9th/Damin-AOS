@@ -21,7 +21,7 @@
             android:name=".presentation.mypage.MypageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-      
+
         <activity
             android:name=".presentation.description.DescriptionActivity"
             android:exported="false"
@@ -50,6 +50,10 @@
         <activity
             android:name=".presentation.situation.SituationInActivity"
             android:screenOrientation="portrait"/> 
+
+        <activity
+            android:name=".presentation.situation.SituationWhereActivity"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".presentation.game.Game1Activity"

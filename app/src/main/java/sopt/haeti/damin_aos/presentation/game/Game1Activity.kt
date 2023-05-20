@@ -14,6 +14,9 @@ class Game1Activity : BindingActivity<ActivityGame1Binding>(R.layout.activity_ga
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        SurviveRate.surviveRate = 0
+
         navigateToHome()
         addSurviveRateBySelection()
     }
@@ -22,7 +25,7 @@ class Game1Activity : BindingActivity<ActivityGame1Binding>(R.layout.activity_ga
         binding.ivBack.setOnClickListener {
             startActivity<HomeActivity>()
             if (!isFinishing) finish()
-            viewModel.surviveRate = 0
+            SurviveRate.surviveRate = 0
         }
     }
 
@@ -34,17 +37,17 @@ class Game1Activity : BindingActivity<ActivityGame1Binding>(R.layout.activity_ga
     private fun addSurviveRateBySelection() {
         with(binding) {
             tvSurviveQuestion1.setOnClickListener {
-                viewModel.surviveRate += 11
+                SurviveRate.surviveRate += 11
                 navigateToGame2()
             }
 
             tvSurviveQuestion2.setOnClickListener {
-                viewModel.surviveRate += 22
+                SurviveRate.surviveRate += 22
                 navigateToGame2()
             }
 
             tvSurviveQuestion3.setOnClickListener {
-                viewModel.surviveRate += 33
+                SurviveRate.surviveRate += 33
                 navigateToGame2()
             }
 
