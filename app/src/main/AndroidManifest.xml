@@ -22,12 +22,12 @@
 
         <activity
             android:name=".presentation.mypage.MypageActivity"
-            android:exported="false"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".presentation.description.DescriptionActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".presentation.home.MainActivity"
             android:screenOrientation="portrait" />
@@ -43,8 +43,13 @@
             </intent-filter>
 
         </activity>
+
         <activity
             android:name=".presentation.home.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.situation.SituationInActivity"
             android:screenOrientation="portrait" />
 
         <activity

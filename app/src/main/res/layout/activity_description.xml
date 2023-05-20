@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-    </data>
+    <data></data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -11,48 +11,114 @@
 
         <ImageButton
             android:id="@+id/btn_home"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_100tb"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_cueing_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_cueing_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_user"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_story_background"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="100dp"
-            android:layout_marginHorizontal="50dp"
-            android:background="@drawable/ic_launcher_background">
+            android:layout_height="0dp"
+            android:background="@color/main_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_user">
 
-            <TextView
-                android:id="@+id/tv_story"
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_story_on_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="50dp"
-                android:text="당신은 현재\n(디테일 상황 선택지_where)의\n(디테일 상황 선택지_in)에 위치해있다.\n\n고단한 하루에 지쳐 뚜벅뚜벅 집에 가기 위해 지하철을 타러 온 당신.\n\n열차를 기다리던 새에 깜빡 잠이 들었다. 어수선한 분위기에 눈을 뜬다.\n\n이런, 플랫폼에서 기다리고 있는 사람들의 발목까지 물이 차오르고 있다.\n밖에 폭우로 인해 빗물이 새는 것 같다.
-\n\n열차는 정차하지 않고 지나간다. 큰일이다.\n\n당신은 오늘 과연 집에 무사히 도착할 수 있을까..?"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="81dp"
+                android:background="@drawable/round"
+                android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="30dp">
 
-                app:layout_constraintBottom_toBottomOf="@id/cl_story_background"
-                app:layout_constraintEnd_toEndOf="@id/cl_story_background"
-                app:layout_constraintHorizontal_bias="0.39"
-                app:layout_constraintStart_toStartOf="@id/cl_story_background"
-                app:layout_constraintTop_toTopOf="@id/cl_story_background" />
 
+                <TextView
+                    android:id="@+id/tv_where"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:background="@color/main_color"
+                    android:paddingHorizontal="8dp"
+                    android:text="지하철 역"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@id/tv_story"
+                    app:layout_constraintTop_toTopOf="@id/tv_story" />
+
+                <TextView
+                    android:id="@+id/tv_in"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="79dp"
+                    android:background="@color/main_color"
+                    android:paddingHorizontal="8dp"
+                    android:text="플랫폼"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@id/tv_story"
+                    app:layout_constraintTop_toTopOf="@id/tv_story" />
+
+                <TextView
+                    android:id="@+id/tv_story"
+                    style="@style/H3Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="@string/description_story" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:id="@+id/btn_next"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start"
+            style="@style/H2Headline"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round"
             android:text="@string/start"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="@id/cl_story_background"
+            android:textColor="@color/main_color"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/cl_story_background"
-            app:layout_constraintTop_toBottomOf="@id/cl_story_background" />
+            app:layout_constraintStart_toStartOf="@id/cl_story_background" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
