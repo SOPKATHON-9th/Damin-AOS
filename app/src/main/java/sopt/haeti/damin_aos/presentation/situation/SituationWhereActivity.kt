@@ -1,10 +1,12 @@
 package sopt.haeti.damin_aos.presentation.situation
 
+import android.content.Intent
 import android.os.Bundle
 import sopt.haeti.damin_aos.R
 import sopt.haeti.damin_aos.databinding.ActivityHomeBinding
 import sopt.haeti.damin_aos.presentation.home.HomeModel
 import sopt.haeti.damin_aos.presentation.home.HomeRecyclerAdapter
+import sopt.haeti.damin_aos.presentation.mypage.MypageActivity
 import sopt.haeti.damin_aos.util.base.BindingActivity
 
 class SituationWhereActivity:BindingActivity<ActivityHomeBinding>(R.layout.activity_home) {
@@ -23,5 +25,11 @@ class SituationWhereActivity:BindingActivity<ActivityHomeBinding>(R.layout.activ
         val adaptor = SituationWhereAdapter(this)
         binding.rvHome.adapter = adaptor
         adaptor.submitList(modelList)
+
+        binding.ivUser.setOnClickListener() {
+            intent = Intent(this@SituationWhereActivity, MypageActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
     }
 }

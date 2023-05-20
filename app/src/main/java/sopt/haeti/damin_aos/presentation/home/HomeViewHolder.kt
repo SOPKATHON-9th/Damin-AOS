@@ -9,7 +9,7 @@ import sopt.haeti.damin_aos.presentation.situation.SituationInActivity
 import sopt.haeti.damin_aos.presentation.situation.SituationWhereActivity
 
 class HomeViewHolder(
-    private val binding: ItemSituationInBinding
+    private val binding: ItemHomeBinding
 ) : RecyclerView.ViewHolder(binding.root) {
 
     @SuppressLint("UseCompatLoadingForDrawables")

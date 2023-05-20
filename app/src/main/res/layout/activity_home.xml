@@ -11,17 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/iv_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:src="@drawable/ic_back"
-            app:layout_constraintBottom_toBottomOf="@id/iv_cueing_logo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo"
-
-            />
 
         <ImageView
             android:id="@+id/iv_cueing_logo"
@@ -63,14 +52,14 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home"
             android:layout_width="match_parent"
-            android:layout_marginHorizontal="30dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
             android:layout_marginTop="36dp"
-            tools:listitem="@layout/item_situation_in"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title"
-            app:spanCount="2" />
+            app:spanCount="2"
+            tools:listitem="@layout/item_situation_in" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

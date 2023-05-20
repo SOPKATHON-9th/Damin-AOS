@@ -1,9 +1,11 @@
 package sopt.haeti.damin_aos.presentation.situation
 
+import android.content.Intent
 import android.os.Bundle
 import sopt.haeti.damin_aos.R
 import sopt.haeti.damin_aos.databinding.ActivityHomeBinding
 import sopt.haeti.damin_aos.presentation.home.HomeModel
+import sopt.haeti.damin_aos.presentation.mypage.MypageActivity
 import sopt.haeti.damin_aos.util.base.BindingActivity
 
 class SituationInActivity :
@@ -22,5 +24,11 @@ class SituationInActivity :
         val adaptor = SituationInRecyclerAdapter(this)
         binding.rvHome.adapter = adaptor
         adaptor.submitList(modelList)
+
+        binding.ivUser.setOnClickListener() {
+            intent = Intent(this@SituationInActivity, MypageActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
     }
 }
