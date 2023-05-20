@@ -5,14 +5,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.google.android.material.tabs.TabLayout
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import sopt.haeti.damin_aos.R
-import sopt.haeti.damin_aos.data.remote.request.ReqSituationResult
-import sopt.haeti.damin_aos.data.remote.response.ResSituationResult
 import sopt.haeti.damin_aos.databinding.ActivityResultBinding
-import sopt.haeti.damin_aos.server.ServicePool
 import sopt.haeti.damin_aos.util.base.BindingActivity
 
 class ResultActivity : BindingActivity<ActivityResultBinding>(R.layout.activity_result) {

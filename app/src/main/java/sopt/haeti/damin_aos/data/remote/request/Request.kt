@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class ReqSituationResult(
+data class RequestSituationResult(
     @SerialName("surviveState")
     val surviveState: String,
     @SerialName("situationWhat")

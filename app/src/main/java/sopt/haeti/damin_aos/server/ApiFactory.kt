@@ -28,5 +28,5 @@ object ApiFactory {
 }
 
 object ServicePool {
-    val apiService = ApiFactory.create<ApiService>()
+    val resultService = ApiFactory.create<ResultService>()
 }
