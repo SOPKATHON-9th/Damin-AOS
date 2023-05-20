@@ -19,11 +19,11 @@
             android:name=".presentation.home.result.ResultActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-      
+
         <activity
             android:name=".presentation.description.DescriptionActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".presentation.home.MainActivity"
@@ -31,8 +31,19 @@
             android:screenOrientation="portrait">
 
         </activity>
-        <activity 
+        <activity
             android:name=".presentation.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".presentation.home.HomeActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".presentation.game.Game1Activity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -42,8 +53,12 @@
         </activity>
 
         <activity
-            android:name=".presentation.home.HomeActivity"
-            android:screenOrientation="portrait"></activity>
+            android:name=".presentation.game.Game2Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".presentation.game.Game3Activity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

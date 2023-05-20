@@ -14,11 +14,11 @@
             android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="26dp"
             android:src="@drawable/ic_back"
-            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo"
             app:layout_constraintBottom_toBottomOf="@id/iv_cueing_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_cueing_logo"
 
             />
 
@@ -28,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_cueing_logo"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
@@ -81,7 +81,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="열차를 기다린지 10분이 지났습니다. \n당신의 선택은?"
+            android:text="건물 내부로 들어왔다. \n당신의 선택은?"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_survive_rate" />
