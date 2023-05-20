@@ -16,10 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
-        <activity
-            android:name=".presentation.result.ResultActivity"
-            android:screenOrientation="portrait" />
-
+        <activity android:name=".presentation.result.ResultActivity" />
         <activity
             android:name=".presentation.mypage.MypageActivity"
             android:exported="false"
