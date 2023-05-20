@@ -2,14 +2,9 @@
     <string name="app_name">Damin-AOS</string>
     <string name="start">시작하기</string>
 
-    <!-- situation_where -->
     <string name="situation_in_title">당신은 지금 어디에 있는가?</string>
 
-    <!--home -->
     <string name="home_title">당신은 어떤 상황에 처해있는가?</string>
+
+    <string name="description_story">당신은 현재\n\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ에서\n\n\n\n\n에 위치해있다.\n\n고단한 하루에 지쳐 뚜벅뚜벅 집에 가기 위해 지하철을 타러 온 당신.\n\n열차를 기다리던 새에 깜빡 잠이 들었다. 어수선한 분위기에 눈을 뜬다.\n\n이런, 플랫폼에서 기다리고 있는 사람들의 발목까지 물이 차오르고 있다.\n밖에 폭우로 인해 빗물이 새는 것 같다. \n\n열차는 정차하지 않고 지나간다. 큰일이다.\n\n당신은 오늘 과연 집에 무사히 도착할 수 있을까..?</string>
 </resources>
-
-
-
-
-

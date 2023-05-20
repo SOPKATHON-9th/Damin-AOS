@@ -15,11 +15,14 @@
         android:theme="@style/Theme.DaminAOS"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
-            android:name=".presentation.home.result.ResultActivity"
+            android:name=".presentation.result.ResultActivity"/>
+        <activity
+            android:name=".presentation.mypage.MypageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-
+      
         <activity
             android:name=".presentation.description.DescriptionActivity"
             android:exported="false"
@@ -27,14 +30,13 @@
 
         <activity
             android:name=".presentation.home.MainActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"/>
 
-        </activity>
         <activity
             android:name=".presentation.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -45,16 +47,14 @@
         <activity
             android:name=".presentation.home.HomeActivity"
             android:screenOrientation="portrait"></activity>
-
-        <activity
-            android:name=".presentation.game.Game1Activity"
-            android:screenOrientation="portrait"></activity>
-
-
+      
         <activity
             android:name=".presentation.situation.SituationInActivity"
             android:screenOrientation="portrait"></activity>
 
+        <activity
+            android:name=".presentation.game.Game1Activity"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".presentation.game.Game2Activity"
