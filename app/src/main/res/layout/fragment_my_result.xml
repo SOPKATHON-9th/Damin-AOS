@@ -72,18 +72,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_result"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_margin="16dp"-->
-<!--                style="@style/H3Headline"/>-->
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                style="@style/H3Headline"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:layout_margin="24dp"
-                android:src="@drawable/iv_mock_my_result"/>
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="180dp"-->
+<!--                android:layout_margin="24dp"-->
+<!--                android:src="@drawable/iv_mock_my_result"/>-->
 
         </com.google.android.material.card.MaterialCardView>
 
