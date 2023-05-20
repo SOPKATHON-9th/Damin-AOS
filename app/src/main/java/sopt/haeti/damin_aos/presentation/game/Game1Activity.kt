@@ -1,5 +1,6 @@
 package sopt.haeti.damin_aos.presentation.game
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import sopt.haeti.damin_aos.R

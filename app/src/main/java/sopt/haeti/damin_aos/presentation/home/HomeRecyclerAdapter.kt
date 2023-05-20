@@ -15,7 +15,7 @@ class HomeRecyclerAdapter(context: Context) :
     private val layoutInflater by lazy { LayoutInflater.from(context) }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
-        val binding = ItemSituationInBinding.inflate(layoutInflater, parent, false)
+        val binding = ItemHomeBinding.inflate(layoutInflater, parent, false)
         return HomeViewHolder(binding)
     }
 
