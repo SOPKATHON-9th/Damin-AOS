@@ -35,8 +35,8 @@ class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragm
                     response: Response<ResponseSituationResult>
                 ) {
                     if (response.isSuccessful) {
-//                        Timber.e(response.body()?.data?.result)
-//                        binding.tvResult.text = response.body()?.data?.result
+                        Timber.e(response.body()?.data?.result)
+                        binding.tvResult.text = response.body()?.data?.result
                     }else{
                         Timber.e(response.code().toString())
                     }

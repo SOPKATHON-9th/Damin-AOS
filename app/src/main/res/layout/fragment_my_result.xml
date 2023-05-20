@@ -38,8 +38,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -63,27 +63,29 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="4dp"
-            app:layout_constraintTop_toBottomOf="@id/mcv_grade"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mcv_grade">
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_result"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_margin="16dp"-->
-<!--                style="@style/H3Headline"/>-->
+            <TextView
+                android:id="@+id/tv_result"
+                style="@style/H3Headline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="24dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:layout_margin="24dp"
-                android:src="@drawable/iv_mock_my_result"/>
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="180dp"-->
+            <!--                android:layout_margin="24dp"-->
+            <!--                android:src="@drawable/iv_mock_my_result"/>-->
 
         </com.google.android.material.card.MaterialCardView>
 
