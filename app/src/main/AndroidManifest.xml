@@ -19,11 +19,11 @@
             android:name=".presentation.home.result.ResultActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-      
+
         <activity
             android:name=".presentation.description.DescriptionActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".presentation.home.MainActivity"
@@ -31,7 +31,7 @@
             android:screenOrientation="portrait">
 
         </activity>
-        <activity 
+        <activity
             android:name=".presentation.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
@@ -44,6 +44,15 @@
         <activity
             android:name=".presentation.home.HomeActivity"
             android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".presentation.situation.SituationInActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".presentation.situation.SituationWhereActivity"
+            android:screenOrientation="portrait"></activity>
+
     </application>
 
 </manifest>
