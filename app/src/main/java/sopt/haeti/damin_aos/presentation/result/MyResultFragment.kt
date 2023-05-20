@@ -11,12 +11,13 @@ import sopt.haeti.damin_aos.data.remote.response.ResponseSituationResult
 import sopt.haeti.damin_aos.databinding.FragmentMyResultBinding
 import sopt.haeti.damin_aos.server.ServicePool
 import sopt.haeti.damin_aos.util.base.BindingFragment
+import timber.log.Timber
 
 class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragment_my_result) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //getSituationResult()
+        getSituationResult()
     }
 
     private fun getSituationResult() {
@@ -34,12 +35,15 @@ class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragm
                     response: Response<ResponseSituationResult>
                 ) {
                     if (response.isSuccessful) {
-//                        binding.tvResult.text = response.body()?.data?.result
+                        Timber.e(response.body()?.data?.result)
+                        binding.tvResult.text = response.body()?.data?.result
+                    }else{
+                        Timber.e(response.code().toString())
                     }
                 }
 
                 override fun onFailure(call: Call<ResponseSituationResult>, t: Throwable) {
-
+                    Timber.e(t.message)
                 }
             })
     }
