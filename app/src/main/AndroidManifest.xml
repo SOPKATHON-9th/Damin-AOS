@@ -15,10 +15,16 @@
         android:theme="@style/Theme.DaminAOS"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
-            android:name=".presentation.home.result.ResultActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:name=".presentation.result.ResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
       
         <activity
             android:name=".presentation.description.DescriptionActivity"
@@ -27,12 +33,12 @@
 
         <activity
             android:name=".presentation.home.MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

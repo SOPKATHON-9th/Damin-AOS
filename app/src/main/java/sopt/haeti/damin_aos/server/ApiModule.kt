@@ -1,6 +1,7 @@
 package sopt.haeti.damin_aos.server
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
@@ -14,6 +15,7 @@ object ApiModule {
         }).build()
     }
 
+    @OptIn(ExperimentalSerializationApi::class)
     val retrofitForKakao: Retrofit by lazy {
         Retrofit.Builder().baseUrl("KAKAO_BASE_URL").client(client)
             .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
