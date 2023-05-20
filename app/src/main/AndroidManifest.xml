@@ -22,7 +22,6 @@
             android:name=".presentation.mypage.MypageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".presentation.description.DescriptionActivity"
             android:screenOrientation="portrait" />
