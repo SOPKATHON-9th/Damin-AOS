@@ -12,5 +12,4 @@ class HomeActivity : BindingActivity<ActivityHomeBinding>(R.layout.activity_home
 
     }
 
-
 }
