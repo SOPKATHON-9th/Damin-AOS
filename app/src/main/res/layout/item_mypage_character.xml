@@ -2,15 +2,33 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/round_white">
 
     <ImageView
         android:id="@+id/iv_character"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="108dp"
+        android:layout_height="110dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="27dp"
         android:contentDescription="완료한 미션 캐릭터들"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_100tb"
+        android:src="@drawable/ic_fire"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_characters"
+        style="@style/H2Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="화재"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_character" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

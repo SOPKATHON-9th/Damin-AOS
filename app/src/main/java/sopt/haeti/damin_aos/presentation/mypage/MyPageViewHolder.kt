@@ -5,7 +5,8 @@ import sopt.haeti.damin_aos.databinding.ItemMypageCharacterBinding
 
 class MyPageViewHolder(private val binding: ItemMypageCharacterBinding) :
     RecyclerView.ViewHolder(binding.root) {
-    fun onBind(imgId: Int) {
-        binding.ivCharacter.setImageResource(imgId)
+    fun onBind(item: MypageData) {
+        binding.ivCharacter.setImageResource(item.type)
+        binding.tvCharacters.text = item.detail
     }
 }

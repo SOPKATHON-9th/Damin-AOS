@@ -7,6 +7,7 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import sopt.haeti.damin_aos.R
+import sopt.haeti.damin_aos.presentation.home.HomeActivity
 import sopt.haeti.damin_aos.presentation.home.MainActivity
 import sopt.haeti.damin_aos.util.extension.startActivity
 
@@ -23,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             delay(2000)
-            startActivity<MainActivity>()
+            startActivity<HomeActivity>()
             overridePendingTransition(0, 0)
             finish()
         }

@@ -50,7 +50,6 @@
 
         <activity
             android:name=".presentation.situation.SituationInActivity"
-            android:screenOrientation="portrait" />
 
         <activity
             android:name=".presentation.game.Game1Activity"

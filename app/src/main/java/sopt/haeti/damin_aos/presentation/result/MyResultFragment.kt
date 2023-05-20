@@ -34,7 +34,7 @@ class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragm
                     call: Call<ResponseSituationResult>,
                     response: Response<ResponseSituationResult>
                 ) {
-                    if(response.isSuccessful){
+                    if (response.isSuccessful) {
 //                        binding.tvResult.text = response.body()?.data?.result
 
                         Timber.e("retrofit", response.body()?.data?.result)
