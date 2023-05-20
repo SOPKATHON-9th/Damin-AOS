@@ -16,9 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.home.result.ResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+      
+        <activity
             android:name=".presentation.description.DescriptionActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
+
         <activity
             android:name=".presentation.home.MainActivity"
             android:exported="true"
