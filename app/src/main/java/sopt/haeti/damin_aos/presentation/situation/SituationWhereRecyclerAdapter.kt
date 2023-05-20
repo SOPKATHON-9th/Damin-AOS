@@ -26,5 +26,5 @@ class SituationWhereRecyclerAdapter(context: Context, private val itemClick: (St
         this.modelList = modelList
         notifyDataSetChanged()
     }
-    
+
 }
