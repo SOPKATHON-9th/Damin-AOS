@@ -95,7 +95,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="의자에 앉아 열차가 정차하길 기다린다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_question" />
@@ -124,7 +124,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="다른 교통수단을 찾아보며 역을 벗어난다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_survive_question_2" />
