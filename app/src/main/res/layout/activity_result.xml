@@ -16,10 +16,18 @@
             android:id="@+id/cl_result_desc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <TextView
+                style="@style/H2Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="당신의 생존 확률은 35% 입니다" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -30,7 +38,21 @@
             android:minHeight="?attr/actionBarSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cl_result_desc" />
+            app:layout_constraintTop_toBottomOf="@id/cl_result_desc">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 결과" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="행동 요령" />
+
+        </com.google.android.material.tabs.TabLayout>
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fcv_result"
