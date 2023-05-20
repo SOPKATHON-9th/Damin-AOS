@@ -9,7 +9,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import sopt.haeti.damin_aos.BuildConfig
 
-object ApiModule {
+object ApiFactory {
     private val client by lazy {
         OkHttpClient.Builder().addInterceptor(HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
@@ -27,6 +27,6 @@ object ApiModule {
     inline fun <reified T> create(): T = retrofit.create(T::class.java)
 
     object ServicePool {
-        // val authService = create<AuthService>()
+         val apiService = create<ApiService>()
     }
 }
