@@ -49,7 +49,7 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".presentation.situation.SituationInActivity"
+            android:name=".presentation.situation.SituationInActivity"/>
 
         <activity
             android:name=".presentation.game.Game1Activity"
