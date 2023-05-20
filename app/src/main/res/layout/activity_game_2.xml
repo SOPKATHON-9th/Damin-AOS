@@ -100,7 +100,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="주변이 잘보이는 가로등 쪽으로 간다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_question" />
@@ -115,7 +115,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="건너편에 보이는 63빌딩으로 대피한다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_survive_question_1" />
@@ -129,7 +129,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="비를 피해 인근 산으로 잠시 대피한다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_survive_question_2" />

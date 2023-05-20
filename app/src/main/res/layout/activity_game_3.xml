@@ -99,7 +99,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="사무실 2층에 있는 화장실에 들어가 기다린다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_question" />
@@ -114,7 +114,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="바깥상황을 살펴야 하니 창문 근처에서 관찰한다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_survive_question_1" />
@@ -128,7 +128,7 @@
             android:background="@drawable/bg_survive_question"
             android:elevation="4dp"
             android:gravity="center"
-            android:text="비를 피해 플랫폼 밖 역사로 피한다."
+            android:text="창문이 보이는 로비의 책상 밑에서 밖을 관찰한다."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_survive_question_2" />
