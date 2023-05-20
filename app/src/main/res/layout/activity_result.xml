@@ -22,12 +22,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                style="@style/H2Headline"
+                style="@style/H1Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="결과 보기"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="당신의 생존 확률은 35% 입니다" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

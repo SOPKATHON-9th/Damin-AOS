@@ -2,6 +2,7 @@ package sopt.haeti.damin_aos.data.remote.response
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+
 @Serializable
 data class ResSituationResult(
     @SerialName("status")

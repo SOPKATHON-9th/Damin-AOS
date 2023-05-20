@@ -11,4 +11,6 @@ interface ApiService {
     fun getSituationResult(
         @Body request: ReqSituationResult
     ): Call<ResSituationResult>
+
+
 }
