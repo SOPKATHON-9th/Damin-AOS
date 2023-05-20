@@ -7,6 +7,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import sopt.haeti.damin_aos.BuildConfig
 
 object ApiModule {
     private val client by lazy {
@@ -16,16 +17,16 @@ object ApiModule {
     }
 
     @OptIn(ExperimentalSerializationApi::class)
-    val retrofitForKakao: Retrofit by lazy {
-        Retrofit.Builder().baseUrl("KAKAO_BASE_URL").client(client)
+    val retrofit: Retrofit by lazy {
+        Retrofit.Builder().baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
+            .client(client)
             .build()
     }
 
-    inline fun <reified T> createKakaoService(): T = retrofitForKakao.create<T>(T::class.java)
+    inline fun <reified T> create(): T = retrofit.create(T::class.java)
 
-}
-
-object ServicePool {
-//    val kakaoSearchService = ApiFactory.createKakaoService<KaKaoService>()
+    object ServicePool {
+        // val authService = create<AuthService>()
+    }
 }

@@ -1,6 +1,5 @@
 package sopt.haeti.damin_aos.presentation.result
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
