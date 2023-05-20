@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class ResSituationResult(
+data class ResponseSituationResult(
     @SerialName("status")
     val status: Int,
     @SerialName("message")

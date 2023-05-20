@@ -6,8 +6,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import sopt.haeti.damin_aos.R
-import sopt.haeti.damin_aos.data.remote.request.ReqSituationResult
-import sopt.haeti.damin_aos.data.remote.response.ResSituationResult
+import sopt.haeti.damin_aos.data.remote.request.RequestSituationResult
+import sopt.haeti.damin_aos.data.remote.response.ResponseSituationResult
 import sopt.haeti.damin_aos.databinding.FragmentMyResultBinding
 import sopt.haeti.damin_aos.server.ServicePool
 import sopt.haeti.damin_aos.util.base.BindingFragment
@@ -16,29 +16,29 @@ class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragm
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        getSituationResult()
+        //getSituationResult()
     }
 
     private fun getSituationResult() {
-        val mockRequest = ReqSituationResult(
+        val mockRequest = RequestSituationResult(
             "SAFE",
             "STORM",
             "SUBWAY",
             "IN_SUBWAY"
         )
 
-        ServicePool.apiService.getSituationResult(mockRequest)
-            .enqueue(object : Callback<ResSituationResult> {
+        ServicePool.resultService.getSituationResult(mockRequest)
+            .enqueue(object : Callback<ResponseSituationResult> {
                 override fun onResponse(
-                    call: Call<ResSituationResult>,
-                    response: Response<ResSituationResult>
+                    call: Call<ResponseSituationResult>,
+                    response: Response<ResponseSituationResult>
                 ) {
                     if(response.isSuccessful){
-                        binding.tvResult.text = response.body()?.data?.result
+//                        binding.tvResult.text = response.body()?.data?.result
                     }
                 }
 
-                override fun onFailure(call: Call<ResSituationResult>, t: Throwable) {
+                override fun onFailure(call: Call<ResponseSituationResult>, t: Throwable) {
 
                 }
             })
