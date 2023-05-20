@@ -3,59 +3,57 @@
 
     <style name="Title">
         <item name="fontFamily">@font/pretendard_semibold</item>
-        <item name="android:textSize">24dp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="H1Headline">
         <item name="fontFamily">@font/pretendard_semibold</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="H2Headline">
         <item name="fontFamily">@font/pretendard_semibold</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="H3Headline">
         <item name="fontFamily">@font/pretendard_semibold</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Body1">
         <item name="fontFamily">@font/pretendard_regular</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Body2">
         <item name="fontFamily">@font/pretendard_regular</item>
-        <item name="android:textSize">14dp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Body2_bold">
         <item name="fontFamily">@font/pretendard_semibold</item>
-        <item name="android:textSize">14dp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Body3">
         <item name="fontFamily">@font/pretendard_regular</item>
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
     
 
     <style name="Body3_bold">
         <item name="fontFamily">@font/pretendard_semibold</item>
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
-
-
 
 </resources>
