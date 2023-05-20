@@ -4,17 +4,9 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class ResponseSituationResult(
+data class MissionProceedResponseDto(
     @SerialName("status")
     val status: Int,
     @SerialName("message")
     val message: String,
-    @SerialName("data")
-    val data: SituationResult,
-){
-    @Serializable
-    data class SituationResult(
-        @SerialName("result")
-        val result: String
-    )
-}
+)

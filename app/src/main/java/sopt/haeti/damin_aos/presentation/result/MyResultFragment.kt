@@ -6,8 +6,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import sopt.haeti.damin_aos.R
-import sopt.haeti.damin_aos.data.remote.request.RequestSituationResult
-import sopt.haeti.damin_aos.data.remote.response.ResponseSituationResult
+import sopt.haeti.damin_aos.data.remote.request.SituationResultRequestDto
+import sopt.haeti.damin_aos.data.remote.response.SituationResultResponseDto
 import sopt.haeti.damin_aos.databinding.FragmentMyResultBinding
 import sopt.haeti.damin_aos.server.ServicePool
 import sopt.haeti.damin_aos.util.base.BindingFragment
@@ -20,7 +20,7 @@ class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragm
     }
 
     private fun getSituationResult() {
-        val mockRequest = RequestSituationResult(
+        val mockRequest = SituationResultRequestDto(
             "SAFE",
             "STORM",
             "SUBWAY",
@@ -28,17 +28,17 @@ class MyResultFragment : BindingFragment<FragmentMyResultBinding>(R.layout.fragm
         )
 
         ServicePool.resultService.getSituationResult(mockRequest)
-            .enqueue(object : Callback<ResponseSituationResult> {
+            .enqueue(object : Callback<SituationResultResponseDto> {
                 override fun onResponse(
-                    call: Call<ResponseSituationResult>,
-                    response: Response<ResponseSituationResult>
+                    call: Call<SituationResultResponseDto>,
+                    response: Response<SituationResultResponseDto>
                 ) {
                     if(response.isSuccessful){
 //                        binding.tvResult.text = response.body()?.data?.result
                     }
                 }
 
-                override fun onFailure(call: Call<ResponseSituationResult>, t: Throwable) {
+                override fun onFailure(call: Call<SituationResultResponseDto>, t: Throwable) {
 
                 }
             })
