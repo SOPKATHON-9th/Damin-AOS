@@ -87,11 +87,11 @@ https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/28dc7f47-b8fd-4c09-93
 # 📸 팀원끼리 응원의 메시지를 담은 사진 촬영
 
 <div class="member">
-    <img width="450" src="https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/335b4e48-20b9-4c50-921d-61bea4f21048">
-    <img width="500" src="https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/90f6d427-f34a-45a3-b6a5-d5d4c1ea8fde">
+    <img width="350" src="https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/335b4e48-20b9-4c50-921d-61bea4f21048">
+    <img width="400" src="https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/90f6d427-f34a-45a3-b6a5-d5d4c1ea8fde">
 </div>
 
-<br><br>
+<br>
 
 # 👨‍👩‍👧‍👧 Contributors
 
