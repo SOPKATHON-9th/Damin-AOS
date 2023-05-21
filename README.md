@@ -1,12 +1,14 @@
 # 💡 서비스 소개
 
-<a href="https://drive.google.com/file/d/1k3HkJ81ea_4uXVQp8wrDfquABhzkZwuv/view?usp=sharing"><img src="https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/af67f513-4d62-48d1-8873-42f2a2a9ddec" alt="발표자료" /></a>
+<!-- <a href=""><img src="https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/34c80df6-75e7-49c3-a029-bdc918a2bca1"/></a> -->
 
-이미지를 클릭하면 발표자료를 확인할 수 있습니다!
+![9조  큐잉!_최종_page-0001](https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/34c80df6-75e7-49c3-a029-bdc918a2bca1)
+
+👉 [최종 발표 자료](https://drive.google.com/file/d/1k3HkJ81ea_4uXVQp8wrDfquABhzkZwuv/view?usp=sharing)
 
 <br>
 
-# 시연 영상 
+# ✨ 시연 영상 
 
 https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/28dc7f47-b8fd-4c09-9319-8b2145192d46
 
