@@ -4,7 +4,7 @@
 
 ![9조  큐잉!_최종_page-0001](https://github.com/SOPKATHON-9th/Damin-AOS/assets/68090939/34c80df6-75e7-49c3-a029-bdc918a2bca1)
 
-👉 [최종 발표 자료](https://drive.google.com/file/d/1k3HkJ81ea_4uXVQp8wrDfquABhzkZwuv/view?usp=sharing)
+👉 [최종 발표 자료](https://drive.google.com/file/d/1kGquC4OKSFQDLg69SqtAA29hU6KzwnMb/view?usp=sharing)
 
 <br>
 
